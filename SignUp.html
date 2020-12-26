@@ -1,0 +1,100 @@
+<!-- Registration Form -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	    	    <style type="text/css">
+	    	body{
+	    
+	    margin-top: 15px;
+	    	}
+	    	.bg-teal{
+	    		 background: linear-gradient(45deg,black,teal,black);
+	    	}
+	    	#btn{
+	    		background: linear-gradient(45deg,blue,teal);
+
+	    	}
+	    	#lbtn{
+	    		background: linear-gradient(45deg,blue,teal);
+	    		float: right;
+	    	}
+	    </style>
+</head>
+<body>
+	<h2 style="text-align:center;">Registration-Form[Sign-Up Page]</h2>
+	<div class="container">
+	<form class="bg-teal p-4 text-white">
+		<label>User Name*:</label>
+		<div class="row">
+		<div class="col">
+				<input type="text" class="form-control" id="fname" placeholder="First Name">
+			</div>
+			<!-- <div class="col">
+				<input type="text" class="form-control" placeholder="Middle Name">
+			</div> -->
+			<div class="col">
+				<input type="text" class="form-control"  id="lname" placeholder="Last Name">
+			</div>
+		</div>
+		<!-- <div>
+			<label>User Name*:</label>
+			<input class="form-control" type="text" name="uname" id="uname" placeholder="Enter full name">
+			</div> -->
+
+			<div>
+				<label>Email-Id*</label>
+				<input class="form-control" type="email" name="email" id="email" placeholder="Enter Email" class="inp" required>
+			</div>
+
+			<div>
+				<label>DOB*:</label>
+				<input class ="form-control" type="date" name="dob" id="dob" class="inp" placeholder="Date of Birth" max="2000-01-01">
+			</div>
+			<br>
+			<div>
+				<label>Gender:</label>
+				<input type="radio" name="gender" id='gender'value="Male">Male
+				<input type="radio" name="gender" id="gender"value="Female" >Female
+			</div>
+			
+			<div>
+				<label>Password*</label>
+				<input class="form-control"type="password" name="pwd" id="pwd"  class="inp"placeholder="Password">
+			</div>
+
+			<div>
+				<label>Confirm Password*</label>
+				<input class="form-control"type="password" name="pwd" id="cpwd" class="inp"placeholder="Password">
+			</div>
+			<br>
+
+			<!-- <div class="form-check">
+				<input class="form-check-input" type="checkbox" id="ch"name="check" required>
+				<label class="form-check-label">Agree terms and conditions</label>
+			</div> -->
+			<div>
+				<input type="checkbox" name="agree" id="agree" >
+				<label >Agree terms and conditions</label>
+				<div style="visibility: hidden;color: red;" id="chk_error">
+					Agree terms and conditions..
+				</div>
+			</div>
+			<br>
+		<!-- 	<button type="submit" class="btn btn-success" id="btn" onclick="return validateForm()">
+		</button> -->
+			<a href="Login.html" class="btn btn-success" role="button" id="btn"
+			onclick="return validateForm()">Register</a>
+			<button type="button" class="btn btn-success" id="btn">Reset</button>
+			<!-- <button type="button" class="btn btn-success" id="lbtn">Login</button> -->
+			<a href="Login.html" class="btn btn-success" role="button" id="lbtn">Login</a>
+			
+
+	</form>
+</div>
+
+<script src="SignUpValidation.js"></script>
+</body>
+</html>

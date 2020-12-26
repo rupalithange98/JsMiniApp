@@ -1,0 +1,62 @@
+<!-- Registration Form -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	    	    <style type="text/css">
+	    	body{
+	    
+	   			 margin-top: 15px;
+	    	}
+	    	.bg-teal{
+	    		 background: linear-gradient(45deg,black,teal,black); */
+	    		 /*background: transparent;*/
+	    	}
+	    	#add,#bshow{
+	    		background: linear-gradient(45deg,teal,blue);
+
+	    	}
+	    	#sbtn{
+	    		background: linear-gradient(45deg,teal,blue);
+	    		float: right;
+
+	    	}
+	    </style>
+</head>
+<body>
+	<h2 style="text-align:center;">Task-Registration Form</h2>
+	<div class="container">
+	<!-- <form class="bg-teal p-4 text-white"> -->
+		<div class="bg-teal p-4 text-white">
+		
+
+			<div>
+				<label>Task Name:</label>
+				<input class="form-control" type="text" name="task" id="task" placeholder="Enter Your Task">
+			</div>
+			
+			<div>
+				<label>Task Description:</label>
+				<textarea rows="5" rows="30"class="form-control"  id="txtarea" placeholder="Enter your message"></textarea> 
+
+			<!-- <p id="txtarea"></p> -->
+			</div>
+			<br>
+
+			<input type="button" class="btn btn-primary" id="add" value="Add"onclick="addData()">
+			<input  type="button" class="btn btn-success"  id="bshow" value="Show"onclick="displayData()">
+			<!-- <button type="submit" class="btn btn-success" id="sbtn" >Sign Up</button> -->
+			<a href=" " class="btn btn-success"  id="sbtn" role="button" onclick="signOut()">Sign Out</a>
+			<div id="show"></div>
+			<div id="edt"></div>
+			<!-- <p id="txtarea"></p> -->
+
+	<!-- </form> -->
+</div>
+
+</div>
+<script type="text/javascript" src="TaskRegistration.js"></script>
+</body>
+</html>

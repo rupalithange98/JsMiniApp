@@ -1,0 +1,50 @@
+<!-- Registration Form -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	    	    <style type="text/css">
+	    	body{
+	    
+	   			 margin-top: 15px;
+	    	}
+	    	.bg-teal{
+	    		 background: linear-gradient(45deg,black,teal,black); */
+	    		 /*background: transparent;*/
+	    	}
+	    	#sbtn,#lbtn{
+	    		background: linear-gradient(45deg,blue,teal);
+
+	    	}
+	    </style>
+</head>
+<body>
+	<h2 style="text-align:center;">Login-Here</h2>
+	<div class="container">
+	<form class="bg-teal p-4 text-white">
+
+			<div>
+				<label>Email-Id*</label>
+				<input class="form-control" type="email" name="email" id="email" placeholder="Enter Email">
+			</div>
+			
+			<div>
+				<label>Password*</label>
+				<input class="form-control"type="password" name="pwd" id="pwd" placeholder="Password">
+			</div>
+			<br>
+
+			<!-- <button type="button" class="btn btn-success" id="lbtn">Login</button> -->
+			<a href="TaskRegistration.html" class="btn btn-success" role="button" id="lbtn" 
+			onclick="return validateLogin()">Login</a>
+			<!-- <button type="submit" class="btn btn-success" id="sbtn" >Sign Up</button> -->
+			<a href="SignUp.html" id="sbtn" class="btn btn-success" role="button">Sign Up</a>
+			
+
+	</form>
+</div>
+<script src="Login.js"></script>
+</body>
+</html>
